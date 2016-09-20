@@ -41,7 +41,9 @@ public class HelloWorldRestController {
      
     @RequestMapping(value = "/user/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<User> getUser(@PathVariable("id") long id) {
-        System.out.println("Fetching User with id " + id);
+
+// SYSOUT EDITED BY PRAVEENA - NAME ADDED
+        System.out.println("PRAVEENA is Fetching User with id " + id);
         User user = userService.findById(id);
         if (user == null) {
             System.out.println("User with id " + id + " not found");
