@@ -1,5 +1,5 @@
 package com.websystique.springmvc.configuration;
-//new line
+//new line1
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
