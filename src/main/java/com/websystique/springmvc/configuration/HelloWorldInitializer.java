@@ -6,7 +6,18 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 public class HelloWorldInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
  
-    @Override
+	
+	String Message;
+	
+    public String getMessage() {
+		return Message;
+	}
+
+	public void setMessage(String message) {
+		Message = message;
+	}
+
+	@Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[] { HelloWorldConfiguration.class };
     }

@@ -15,6 +15,16 @@ import org.springframework.web.servlet.view.JstlView;
 @ComponentScan(basePackages = "com.websystique.springmvc")
 public class HelloWorldConfiguration extends WebMvcConfigurerAdapter{
 	
+	String message ;
+	
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
 	@Override
 	public void configureViewResolvers(ViewResolverRegistry registry) {
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
